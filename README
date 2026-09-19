@@ -8,7 +8,7 @@ The public-facing website for **Tucson Adaptive Learning Academy (TALA)**, a yea
 
 ## Overview
 
-This repository contains a responsive, accessible landing page and interactive preview for TALA. The site introduces the academy's mission, explains the admissions process, demonstrates a sample student schedule, and provides contact and registration calls to action.
+This repository contains a responsive, accessible landing page and About Us experience for TALA. The site introduces the academy's mission, explains the admissions process, demonstrates a sample student schedule, and provides contact, biography, and registration calls to action.
 
 ## Features
 
@@ -21,6 +21,7 @@ This repository contains a responsive, accessible landing page and interactive p
 - Interactive sample weekly schedule with booking and waiting-list states
 - Sample attendance-hours calendar
 - Tabbed “Learn more” content panels
+- Dedicated About Us page for TALA, Tina, and Karl
 - Community member login preview dialog
 - Direct phone and registration/payment links
 - Reduced-motion support
@@ -31,6 +32,7 @@ This repository contains a responsive, accessible landing page and interactive p
 ```text
 .
 ├── index.html   # Complete static website, including styles and JavaScript
+├── about.html   # Long-form About Us page
 └── README.md
 ```
 

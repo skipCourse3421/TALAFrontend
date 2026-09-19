@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tuscon Adaptive Learning Academy (TALA)</title>
-<meta name="description" content="TALA is a year-round Tuscon school for medically fragile and wheelchair-dependent children. 50 weeks a year, 2-hour high-support blocks, licensed RN, 2:1 staffing.">
+<title>Tucson Adaptive Learning Academy (TALA)</title>
+<meta name="description" content="TALA is a year-round Tucson school for medically fragile and wheelchair-dependent children. 50 weeks a year, 2-hour high-support blocks, licensed RN, 2:1 staffing.">
 <meta name="theme-color" content="#1d0d40">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237a4ad8'/%3E%3Cstop offset='1' stop-color='%232d1657'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M15 50V32a17 17 0 0 1 34 0v18' fill='none' stroke='%23e6dbfa' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='41' r='7' fill='%23ffc29b'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,6 +122,19 @@ img,svg{max-width:100%}
 .dock-arch svg{width:34px;height:34px;color:var(--brand);margin-bottom:10px}
 @media (max-width:1100px){.dock{grid-template-columns:1fr 1fr;grid-auto-rows:auto}.dock-tour{grid-column:1/-1;order:-1}}
 @media (max-width:560px){.dock{grid-template-columns:1fr}.dock-learn{min-height:140px}.dock-arch{min-height:0;padding-top:44px;border-radius:70px 70px 24px 24px}}
+
+/* about preview */
+#about-preview{padding-top:0}
+.about-preview{display:grid;gap:24px}
+.about-preview-intro{max-width:48rem}
+.about-preview-intro p{color:var(--muted);font-size:1.08rem;margin-top:14px}
+.bio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.bio-card{display:grid;gap:16px;align-content:start;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 22px 44px -30px rgba(45,22,87,.45)}
+.bio-card h3{font-size:1.55rem}
+.bio-card p{color:var(--muted);margin:0}
+.bio-card a{font-weight:700;text-decoration:none}
+.bio-card a:hover{text-decoration:underline}
+@media (max-width:900px){.bio-grid{grid-template-columns:1fr}}
 
 section{padding:clamp(64px,9vw,120px) 0}
 .sec-head{max-width:40rem;margin-bottom:40px}
@@ -349,12 +362,13 @@ legend{font-weight:700;margin-bottom:8px;padding:0}
 
 <header class="nav dark-zone" id="top">
   <div class="wrap nav-in">
-    <a class="brand" href="#top" aria-label="Tuscon Adaptive Learning Academy, home">
+    <a class="brand" href="#top" aria-label="Tucson Adaptive Learning Academy, home">
       <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#mark"/></svg>
-      <span><b>Tuscon Adaptive Learning Academy</b><small>TALA</small></span>
+      <span><b>Tucson Adaptive Learning Academy</b><small>TALA</small></span>
     </a>
     <nav class="nav-links" id="navlinks" aria-label="Main">
       <a href="#top">Home</a>
+      <a href="about.html">About us</a>
       <a href="#learn">Learn more</a>
       <a href="#waiting">Waiting list</a>
       <a href="#community">Community events</a>
@@ -431,7 +445,7 @@ legend{font-weight:700;margin-bottom:8px;padding:0}
       +1.520.639.5411
     </a>
     <h1>Empowering every human to succeed</h1>
-    <p class="sub">A year-round school in Tuscon for medically fragile and wheelchair-dependent children.</p>
+    <p class="sub">A year-round school in Tucson for medically fragile and wheelchair-dependent children.</p>
     <div class="hero-actions">
       <a class="btn btn-glow" href="https://payments-na1.hubspot.com/payments/purchase/hscs_cRNWyJDhkTltMhXv7fbnjO4oMDqmdYtw5Nh9RXFU0vYnhomC9WH9zIDCAVGrelrD?referrer=PAYMENT_LINK" target="_blank" rel="noopener noreferrer">Register</a>
       <a class="btn btn-line" href="#learn">Learn more</a>
@@ -440,9 +454,9 @@ legend{font-weight:700;margin-bottom:8px;padding:0}
 </section>
 
 <div class="wrap dock" style="padding:0">
-  <a class="dock-learn" href="#learn">
-    <strong>Learn more</strong>
-    <span>About us, our mission, and how our schedule works</span>
+  <a class="dock-learn" href="about.html">
+    <strong>About us</strong>
+    <span>Meet TALA, founder Tina, and faculty member Karl</span>
   </a>
   <div class="dock-tour">
     <h3>Virtual school tours</h3>
@@ -476,6 +490,32 @@ legend{font-weight:700;margin-bottom:8px;padding:0}
       <div><b>2-hour blocks</b><span>In person or virtual, matched to stamina</span></div>
       <div><b>Licensed RN</b><span>Supports every high-support block</span></div>
       <div><b>2:1 staffing</b><span>In-person staffing ratio</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about-preview">
+  <div class="wrap about-preview">
+    <div class="about-preview-intro">
+      <h2>Meet the people and purpose behind TALA</h2>
+      <p>Get a quick introduction here, then visit the full About Us page for the academy story, founder vision, and faculty leadership guiding Tucson Adaptive Learning Academy.</p>
+    </div>
+    <div class="bio-grid">
+      <article class="bio-card">
+        <h3>TALA</h3>
+        <p>A year-round adaptive learning community built around each student's stamina and strengths.</p>
+        <a href="about.html#academy">Read TALA's story</a>
+      </article>
+      <article class="bio-card">
+        <h3>Tina</h3>
+        <p>Founder shaping a compassionate, family-centered launch from vision to opening day.</p>
+        <a href="about.html#founder">Meet founder Tina</a>
+      </article>
+      <article class="bio-card">
+        <h3>Karl</h3>
+        <p>Founding faculty member designing mastery-based learning through SkipCourse.</p>
+        <a href="about.html#faculty">Meet faculty member Karl</a>
+      </article>
     </div>
   </div>
 </section>
@@ -592,7 +632,7 @@ legend{font-weight:700;margin-bottom:8px;padding:0}
 
 <section id="learn">
   <div class="wrap">
-    <div class="sec-head"><h2>Learn more about TALA</h2></div>
+    <div class="sec-head"><h2>Learn more about TALA</h2><p>Explore the full About Us story or use these quick links to understand our mission, model, and founders.</p></div>
     <div class="learn">
       <div class="tabs" role="tablist" aria-label="About TALA" aria-orientation="vertical">
         <button role="tab" id="t-about" aria-selected="true" aria-controls="p-about">About us</button>
@@ -604,7 +644,9 @@ legend{font-weight:700;margin-bottom:8px;padding:0}
       <div>
         <div class="tpanel" role="tabpanel" id="p-about" aria-labelledby="t-about">
           <h3>About us</h3>
-          <p class="soon">Coming soon</p>
+          <p class="quote">A personalized, year-round academy built around student stamina, belonging, and meaningful growth.</p>
+          <p>Tucson Adaptive Learning Academy combines rigorous academics, responsive support, and a modern learning model for medically fragile and wheelchair-dependent children.</p>
+          <a class="btn btn-brand" href="about.html">Read the full About Us page</a>
         </div>
         <div class="tpanel" role="tabpanel" id="p-mission" aria-labelledby="t-mission" hidden>
           <h3>Mission</h3>
@@ -622,7 +664,8 @@ legend{font-weight:700;margin-bottom:8px;padding:0}
         </div>
         <div class="tpanel" role="tabpanel" id="p-founders" aria-labelledby="t-founders" hidden>
           <h3>About our founders</h3>
-          <p class="soon">Coming soon</p>
+          <p>Tina leads TALA's launch with a focus on family trust, compassionate culture, and sustainable growth. Karl serves as founding faculty and the architect of SkipCourse, TALA's mastery-based learning platform.</p>
+          <a class="btn btn-brand" href="about.html#founder">Meet Tina and Karl</a>
         </div>
       </div>
     </div>
@@ -670,11 +713,11 @@ legend{font-weight:700;margin-bottom:8px;padding:0}
 
 <footer class="dark-zone">
   <div class="wrap foot">
-    <a class="brand" href="#top"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#mark"/></svg><span><b>Tuscon Adaptive Learning Academy</b><small>Empowering every human to succeed</small></span></a>
+    <a class="brand" href="#top"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#mark"/></svg><span><b>Tucson Adaptive Learning Academy</b><small>Empowering every human to succeed</small></span></a>
     <nav aria-label="Footer">
-      <a href="#top">Home</a><a href="#learn">Learn more</a><a href="#waiting">Waiting list</a><a href="#community">Community events</a><a href="#contact">Contact us</a><a href="#funding">Funding sources</a>
+      <a href="#top">Home</a><a href="about.html">About us</a><a href="#learn">Learn more</a><a href="#waiting">Waiting list</a><a href="#community">Community events</a><a href="#contact">Contact us</a><a href="#funding">Funding sources</a>
     </nav>
-    <small>&copy; 2026 Tuscon Adaptive Learning Academy. Tuscon, Arizona.</small>
+    <small>&copy; 2026 Tucson Adaptive Learning Academy. Tucson, Arizona.</small>
   </div>
 </footer>
 
